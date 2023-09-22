@@ -83,3 +83,6 @@ installed.
 Since I use absolute paths on many places you have to update paths after downloading this project. Rule of thumb is that change is required for:
 1. scripts that load data into tf.dataset pipelines (search for `TFile` and update paths to your simulations/measured data),
 2. all *.sh files. Paths that require changing are: a) root, python, g++ and other libraries; b) python environments and c) scripts
+
+## Code description
+Please note, that this description is rather short. For more detailed overview, see SuperNEMO documentation. For my implementation of CapsNET, see [this repository](https://github.com/amendl/Capsules).
