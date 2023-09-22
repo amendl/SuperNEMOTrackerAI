@@ -28,6 +28,7 @@ Optional:
  * `tensorboard_plugin_profile` - profiling
  * `nvidia-pyindex`, `nvidia-tensorrt` - For TensorRT support
  * `nvidia-smi` -  For checking usage and available memory on NVIDIA V100 GPU (on CCLyon)
+ * `ray` - For massively parallelized hyperparameter optimization. Use this command `python -m pip install -U "ray[data,train,tune,serve]"` to install.
 
 ## Running scripts (on CCLyon in2p3 cluster)
 Example is at `example_exec.sh`. Run it with `sbatch --mem=... -n 1 -t ... gres=gpu:v100:N example_exec.sh` if you have access to GPU, where `N` is number of GPUs you want to use (currently CCLyon does not allow me to use more than three of them) Otherwise, leave out `gres` option.
